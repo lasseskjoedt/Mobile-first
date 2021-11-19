@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>De 4 Aarstider</title>
+</head>
+<body>
+
+<!-- nav -->
+<nav>
+  <ul class="nav_desktop">
+    <li><a href="index.html"><img src="img/logo.png" alt="logo_desktop" class="logo_desktop"></a></li>
+    <li><a href="inspiration.html">Inspiration <img class="icon" src="img/Blomst.png" alt="Blomst"></a></li>
+    <li><a href="bestil.html">Bestilling <img class="icon" src="img/Kurv.png" alt="Kurv"></a></li> 
+    <li><a href="omos.html">Om Os <img class="icon" src="img/Personer.png" alt="Personer"></a></li> 
+    <li><a href="index.html">Min Profil <img class="icon" src="img/Mand.png" alt="Mand"></a></li>
+  </ul>
+  <input id="nav-toggle" type="checkbox">
+  
+  <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+  <a href="index.html"><img id="min_profil" src="img/Mand.png" alt="Mand"></a>
+  <ul class="links">
+      <li><a href="inspiration.html">Inspiration <img class="icon" src="img/Blomst.png" alt="Blomst"></a></li>
+      <li><a href="bestil.html">Bestilling <img class="icon" src="img/Kurv.png" alt="Kurv"></a></li> 
+      <li><a href="omos.html">Om Os <img class="icon" src="img/Personer.png" alt="Personer"></a></li> 
+      <li><a href="index.html">Min Profil <img class="icon" src="img/Mand.png" alt="Mand"></a></li>
+       
+  </ul>
+  <label for="nav-toggle" class="icon-burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </label>
+</nav>
+
+<!-- main -->
+<main>
+  <div class="content">
+    <h2 class="underside_header" id="bestil_header">Bestil her </h2>
+    <p class="underside_text">Vælg i kategorierne, hvilken type produkt du kunne tænke dig</p> 
+    <div id="container">
+      <details id="dropdown" class="dropdown">
+        <summary class="dropdown-button">
+          <span id="selected-item" class="selected-item">Begivenhed</span>
+        </summary>
+        <details-menu class="dropdown-menu">
+          <div class="dropdown-menu-header">Vælg begivenhed</div>
+          <div class="dropdown-menu-list">
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item" value="Bryllup" checked>
+              <span>Bryllup</span>
+            </label>
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item" value="Begravelse">
+              <span>Begravelse</span>
+            </label>
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item" value="Fødselsdag">
+              <span>Fødselsdag</span>
+            </label>
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item" value="Konfirmation">
+              <span>Konfirmation</span>
+            </label>
+          </div>
+        </details-menu>
+      </details>
+  </div>
+  
+
+  <div id="container_2">  
+      <details id="dropdown" class="dropdown">
+        <summary class="dropdown-button">
+          <span id="selected-item" class="selected-item">Pris</span>
+        </summary>
+        <details-menu class="dropdown-menu">
+          <div class="dropdown-menu-header">Vælg prisklasse</div>
+          <div class="dropdown-menu-list">
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item2" value="Bryllup" checked>
+              <span>20-200 kr.</span>
+            </label>
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item2" value="Begravelse">
+              <span>200-400 kr.</span>
+            </label>
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item2" value="Fødselsdag">
+              <span>400-600 kr.</span>
+            </label>
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item2" value="Konfirmation">
+              <span>600-1000 kr.</span>
+            </label>
+          </div>
+        </details-menu>
+      </details>
+  </div>
+  
+
+  <div id="container_3">
+      <details id="dropdown" class="dropdown">
+        <summary class="dropdown-button">
+          <span id="selected-item" class="selected-item">Farve</span>
+        </summary>
+        <details-menu class="dropdown-menu">
+          <div class="dropdown-menu-header">Vælg Farver</div>
+          <div class="dropdown-menu-list">
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item3" value="Bryllup" checked>
+              <span>Blå</span>
+            </label>
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item3" value="Begravelse">
+              <span>Pink</span>
+            </label>
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item3" value="Fødselsdag">
+              <span>Hvid</span>
+            </label>
+            <label class="dropdown-menu-item">
+              <input type="radio" name="item3" value="Konfirmation">
+              <span>Lilla</span>
+            </label>
+          </div>
+        </details-menu>
+      </details>
+  </div>
+  <a href="bestil.html"><button class="content_btn" id="bestil_underside_btn">Bestil</button></a>
+  </div>
+
+  <script src="script.js"></script>
+</main>
+<!-- Footer -->
+<footer class="page_footer footer_color">
+    <section class="page_footer_section" id="contact">
+        <h4 class="contact">Kontakt Os</h4>
+        <address class="page_footer_address">
+            Adresse: Ceresbyen 16b, 8000 Aarhus C<br>
+            Telefon: +45 42 36 49 43 <br>
+            Mail: info@4-aarstider.dk <br>
+        </address>
+    </section>
+    <section class="page_footer_section">
+        <h4>Åbningstider</h4>
+            Mandag - Fredag: 10.00 - 17.30 <br>
+            Lørdag - Søndag: 10.00 - 15.00 <br>
+    </section>
+    <section class="page_footer_section">
+        <h4>Følg Os</h4>
+        <a href="https://www.instagram.com/de4aarstider__ceresbyen/"><img src="img/insta-glyph-logo.png" alt="instagram logo" class="some_image"></a>
+        <a href="https://www.facebook.com/DE-4-%C3%85RSTIDER-616981708775286"><img src="img/facebook-black-icon.png" alt="facebook logo" class="some_image"></a>
+    </section>
+</footer>
+
+
+</body>
+</html>
